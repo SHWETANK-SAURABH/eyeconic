@@ -1,0 +1,206 @@
+/* Importing Google font - Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #e0e0e0; /* Softer, neutral background */
+  color: #333; /* Darker gray text for contrast */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: linear-gradient(90deg, #5c6bc0, #3949ab); /* Softer blues for navbar */
+  padding: 10px 0; /* Reduced padding to decrease height */
+  transition: all 0.3s ease;
+}
+
+.header:hover {
+  background: linear-gradient(90deg, #3949ab, #5c6bc0); 
+  box-shadow: 0px 4px 10px rgba(57, 73, 171, 0.4);
+  transform: scale(1.01);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 15px; /* Reduced padding to decrease height */
+}
+
+.navbar .logo a {
+  font-size: 2.2rem;
+  font-weight: 700; /* Increased font weight for visibility */
+  text-decoration: none;
+  color: #f5f5f5; /* Softer white */
+  transition: all 0.4s ease-in-out, transform 0.4s ease;
+}
+
+.navbar .logo a:hover {
+  color: #eeeeee; /* Slightly darker white */
+  transform: scale(1.1); /* Reduced scaling for smoother experience */
+}
+
+.navbar .links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 25px; /* Adjusted spacing */
+}
+
+.navbar .links a {
+  font-weight: 600; /* Bolder font */
+  text-decoration: none;
+  color: #f5f5f5;
+  padding: 10px 0;
+  transition: 0.3s ease;
+}
+
+.navbar .links a:hover {
+  color: #ffca28; /* Muted gold color */
+  border-bottom: 2px solid #ffca28;
+}
+
+.navbar .buttons a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 1rem;
+  font-weight: 600; /* Increased font weight */
+  padding: 12px 0;
+  transition: 0.3s ease;
+}
+
+.navbar .buttons .signup {
+  border: 1px solid #f5f5f5;
+  padding: 10px 20px;
+  border-radius: 0.375rem;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.navbar .buttons .signup:hover {
+  background-color: #ffca28;
+  color: #333;
+  transform: scale(1.05);
+}
+
+/* Sign In Button styling similar to Sign Up */
+.navbar .buttons .signin {
+  border: 1px solid #f5f5f5; /* Same border as sign up */
+  padding: 10px 20px;
+  border-radius: 0.375rem;
+  background: rgba(255, 255, 255, 0.1); /* Same background as sign up */
+}
+
+.navbar .buttons .signin:hover {
+  background-color: #ffca28; /* Same hover background color */
+  color: #333;
+  transform: scale(1.05); /* Hover scale effect */
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  padding-left: 50px;
+  text-align: left;
+  background: url('eye1.png') no-repeat center center;
+  background-size: cover;
+  padding-top: 120px;
+}
+
+.hero-section .hero {
+  max-width: 600px;
+  background: transparent;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(57, 73, 171, 0.3);
+  transition: all 0.4s ease;
+}
+
+.hero-section .hero:hover {
+  background: rgba(255, 255, 255, 0.7); /* Softer white background */
+  box-shadow: 0px 8px 20px rgba(57, 73, 171, 0.5);
+  transform: scale(1.05);
+}
+
+.hero-section .hero h2 {
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+  font-weight: 700; /* Bolder heading */
+  color: #333; /* Darker heading color */
+  line-height: 1;
+}
+
+.hero-section .hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 500; /* Bolder paragraph text */
+  color: #444; /* Darker gray for paragraph text */
+}
+
+.hero-section .buttons {
+  margin-top: 20px;
+}
+
+.hero-section .buttons a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 0.375rem;
+  font-weight: 700; /* Bolder button text */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-section .buttons a:not(:last-child) {
+  margin-right: 15px;
+}
+
+.hero-section .buttons .join {
+  background-color: #64b5f6; /* Muted blue */
+}
+
+.hero-section .buttons .learn {
+  background-color: #ffca28; /* Muted yellow */
+  color: #333;
+  border: 1px solid #fff;
+}
+
+.hero-section .buttons a:hover {
+  background-color: #42a5f5;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1023px) {
+  .navbar .logo a {
+    font-size: 1.5rem;
+  }
+
+  .header .buttons {
+    display: none;
+  }
+
+  .hero-section {
+    padding-left: 15px;
+  }
+
+  .hero-section .hero {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
