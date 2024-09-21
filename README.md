@@ -54,7 +54,7 @@ By democratizing eye care, this project offers early diagnosis and preventive so
 
 2. Navigate to the project directory:
    ```bash
-   cd eyeconic-vision-health-assistant
+   cd eyeconic
    ```
 
 3. Install the dependencies:
