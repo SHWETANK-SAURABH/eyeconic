@@ -49,7 +49,7 @@ By democratizing eye care, this project offers early diagnosis and preventive so
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/eyeconic-vision-health-assistant.git
+   git clone https://github.com/<team-eyeconic>/eyeconic.git
    ```
 
 2. Navigate to the project directory:
