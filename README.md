@@ -1,29 +1,81 @@
-# Eye Diseases Classification 👁️
-The early detection of eye diseases is essential for preserving vision and preventing further damage. Many eye diseases, such as diabetic retinopathy and glaucoma can have few or no symptoms in their early stages. By the time symptoms appear, the disease may have progressed to a point where it is much harder to treat. Early detection also provides an opportunity to start appropriate treatment that can help manage the condition and prevent vision loss. Consequently, early detection of these diseases is so crucial because people can lose their vision.
+# EyeConic: AI-Powered Vision Health Assistant
 
-## Dataset
-The dataset consists of Normal, Diabetic Retinopathy, Cataract, and Glaucoma retinal images, where each class has approximately 1000 images. These images are collected from various sources like IDRiD, Oculur recognition, HRF, etc.
-The dataset can be downloaded here: https://www.kaggle.com/datasets/gunavenkatdoddi/eye-diseases-classification
+### Overview
+Millions of people suffer from undiagnosed vision problems, particularly in areas with limited access to healthcare professionals. This project aims to build an **AI-powered virtual assistant** that uses **Machine Learning (ML)**, **Natural Language Processing (NLP)**, and **Computer Vision (CV)** to detect early signs of eye conditions. By enabling users to conduct basic tests and describe symptoms from home, our solution can assist in early diagnosis and suggest professional consultations when necessary.
 
-### Examples:
+---
 
-**Cataracts**: Cataracts are a common age-related condition in which the lens of the eye becomes cloudy, causing blurry vision and sensitivity to light. Surgery is the most common treatment for cataracts.  
+### Problem Statement
+Many people delay getting their eyes checked until a problem becomes severe, leading to more complicated treatment and higher costs. This issue is particularly critical in **low-resource settings** where healthcare infrastructure is minimal, and eye care services are difficult to access.
 
-<img src="https://github.com/SinaRaoufi/Eye-Diseases-Classification/blob/master/samples/cataract.jpg" width="128" height="128" />
+---
 
-**Diabetic Retinopathy**: Diabetic Retinopathy is a complication of diabetes that affects the retina and can lead to vision loss. High blood sugar levels can damage blood vessels in the retina and cause them to leak or swell, leading to vision problems.
+### Solution
+The **AI-Powered Vision Health Assistant** helps users perform self-diagnosis through image-based assessments and symptom checks. It integrates cutting-edge technologies to deliver an intelligent and holistic eye health assistant.
 
-<img src="https://github.com/SinaRaoufi/Eye-Diseases-Classification/blob/master/samples/diabetic_retinopathy.jpeg" width="128" height="128" />
+---
 
-**Glaucoma**: Glaucoma is a group of eye diseases that can damage the optic nerve and lead to vision loss. It is often caused by increased pressure in the eye, although not all cases of glaucoma have elevated eye pressure. Early detection and treatment are important in preventing vision loss from glaucoma, which has no cure.
+### Key Features
 
-<img src="https://github.com/SinaRaoufi/Eye-Diseases-Classification/blob/master/samples/glaucoma.jpg" width="128" height="128" />
-
-**Normal**
-
-<img src="https://github.com/SinaRaoufi/Eye-Diseases-Classification/blob/master/samples/normal.jpg" width="128" height="128" />
-
+1. **Image-Based Diagnosis (Computer Vision):**
+   - Users can take pictures of their eyes using a high resolution smartphone camera, or proper laboratory camera
+   - The AI analyzes these images to detect common eye problems such as redness, cataracts, and other visible abnormalities.
+   - The system can also run basic vision tests for issues like strabismus or nystagmus.
 
 
-## Model
-For this classification, I use a Convolutional neural network (CNN) which is made of convolution stages (Conv2d, ReLU, MaxPool2d) and a fully connected layer at the end.
+3. **Machine Learning-Powered Recommendations:**
+   - The system refines its recommendations over time using ML algorithms that learn from user inputs and image data.
+   - Suggestions include recommendations for professional appointments in high-risk cases.
+
+4. **Integration with Wearable Devices:**
+   - Future aspects include potential integration with **AR glasses** or **smart contact lenses** to provide real-time eye health feedback, posture correction, and alerts for excessive screen time.
+
+---
+
+### Impact
+By democratizing eye care, this project offers early diagnosis and preventive solutions, particularly for individuals in rural and underserved areas. It leverages **ML, NLP, and CV technologies** to provide accessible, at-home vision care.
+
+---
+
+### Technologies
+
+- **Computer Vision:** OpenCV, TensorFlow, or PyTorch for image processing and analysis.
+- **Machine Learning:** Continuous learning models to improve diagnosis accuracy.
+- **Wearable Integration (Future Scope):** Compatibility with AR glasses or smart contact lenses for real-time feedback.
+
+---
+
+### How to Run the Project
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/<your-username>/eyeconic-vision-health-assistant.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd eyeconic-vision-health-assistant
+   ```
+
+3. Install the dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Run the application:
+   ```bash
+   python app.py
+   ```
+
+---
+
+### Team
+**Team Name:** EyeConic  
+We are passionate about using technology to solve critical health issues, particularly in underserved regions. Our goal is to make vision care more accessible through innovation.
+
+---
+
+### License
+This project is yet to be licensed.
+
+---
