@@ -1,7 +1,7 @@
 # EyeConic: AI-Powered Vision Health Assistant
 
 ### Overview
-Millions of people suffer from undiagnosed vision problems, particularly in areas with limited access to healthcare professionals. This project aims to build an **AI-powered virtual assistant** that uses **Machine Learning (ML)**, **Natural Language Processing (NLP)**, and **Computer Vision (CV)** to detect early signs of eye conditions. By enabling users to conduct basic tests and describe symptoms from home, our solution can assist in early diagnosis and suggest professional consultations when necessary.
+Millions of  people suffer from undiagnosed vision problems, particularly in areas with limited access to healthcare professionals. This project aims to build an **AI-powered virtual assistant** that uses **Machine Learning (ML)**, **Natural Language Processing (NLP)**, and **Computer Vision (CV)** to detect early signs of eye conditions. By enabling users to conduct basic tests and describe symptoms from home, our solution can assist in early diagnosis and suggest professional consultations when necessary.
 
 ---
 
